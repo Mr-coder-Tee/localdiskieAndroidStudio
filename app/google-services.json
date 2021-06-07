@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "978328336529",
+    "project_id": "localdiskieapp",
+    "storage_bucket": "localdiskieapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978328336529:android:856608a348014f1b4c6730",
+        "android_client_info": {
+          "package_name": "com.example.localdiskieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978328336529-km7rd3d25kjbsotptla5aeli0sv7pj5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlzEKdNuG7972JlP7H233xayGdYqL_Qq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978328336529-km7rd3d25kjbsotptla5aeli0sv7pj5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

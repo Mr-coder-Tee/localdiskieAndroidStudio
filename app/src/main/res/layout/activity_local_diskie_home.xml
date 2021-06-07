@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".localDiskieHome"
+    android:background="@color/app_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toplayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tool_bar"
+        android:padding="5dp"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diskie"
+            android:textColor="#D11414"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:src="@drawable/homepagelogoa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            />
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/userprofile1"
+            android:src="@drawable/userprofile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <!--
+    <LinearLayout
+        android:id="@+id/toplayout1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/tool_bar"
+        android:padding="5dp"
+        android:layout_alignParentTop="true">
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/userprofile1"
+            android:src="@drawable/userprofile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+-->
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/addnew"
+        app:fabSize="normal"
+        android:elevation="0dp"
+        android:background="@color/second_app_background"
+        />
+    <FrameLayout
+        android:id="@+id/homeframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toplayout1"
+        android:layout_above="@+id/bottom_nav"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu"
+        android:background="@color/white"
+        app:labelVisibilityMode="labeled"/>
+</RelativeLayout>

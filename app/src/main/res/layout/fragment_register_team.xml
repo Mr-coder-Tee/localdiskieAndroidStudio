@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterTeam"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/teammate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/teamnameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@color/second_app_background">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/teamlogo"
+            android:src="@drawable/userprofile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColorHint="@color/black">
+            <EditText
+                android:id="@+id/registerteamname"
+                android:hint="Enter Team Name"
+                android:textSize="20sp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColorHint="@color/black">
+            <EditText
+                android:id="@+id/location"
+                android:hint="Enter Team and Ground Location"
+                android:textSize="20sp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnteamSubmit"
+                android:background="@color/button_color"
+                android:text="Submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:id="@+id/btnteamCancel"
+                android:background="@color/button_color"
+                android:text="cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

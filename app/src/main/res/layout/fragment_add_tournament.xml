@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTournament"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/black">
+        <EditText
+            android:id="@+id/addTourName"
+            android:hint="Enter Tournament Name"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Spinner
+        android:id="@+id/spinner_tournamentsize"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        style=""
+        />
+    <!-- <DatePicker
+         android:layout_width="match_parent"
+         android:layout_height="100dp"
+         android:datePickerMode="spinner"
+         android:calendarViewShown="false"/>-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/black">
+        <EditText
+            android:id="@+id/addDescription"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:hint="About Tournament(eg: Affiliation,location and date)"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:scrollbars="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/addPick"
+            android:text="Photo"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@color/app_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/selectposter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_margin="3dp"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/addPost"
+        android:text="Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>
